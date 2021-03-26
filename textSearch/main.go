@@ -1,10 +1,20 @@
-package textSearch
+package main
 
 import (
+	"flag"
+	"fmt"
 	"strconv"
 	"strings"
 	"unicode"
 )
+
+func main() {
+	textToSearchPtr := flag.String("textToSearch", "", "The text to search")
+	subtextPtr := flag.String("subtext", "", "The text that you're looking for")
+	flag.Parse()
+	output := textSearch(*textToSearchPtr, *subtextPtr)
+	fmt.Println(output)
+}
 
 func textSearch(textToSearch, subtext string) string {
 	// If there's no text to search or no subtext then we can just return an empty output
