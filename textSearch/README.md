@@ -12,10 +12,10 @@ We need a way of finding all the occurrences of a particular set of characters i
 
 ## Solution
 
-The main package contains 2 functions outlined below. To execute the program run the following:
+The main package contains 2 functions outlined below. To execute the program run the following from the commandline:
 
 ```
-go run main.go -textToSearch="Peter told me that peter the pickle piper piped a pitted pickle before he petered out. Phew!" -subtext=Peter
+go run main.go -textToSearch="Peter told me that peter the pickle piper piped a pitted pickle before he petered out. Phew!" -subtext="Peter"
 ```
 
 To run the tests, run:
